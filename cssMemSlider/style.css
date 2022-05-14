@@ -44,7 +44,7 @@ p {
 
 .carousel_item .item {
     width: 25%;
-    transition: all .6s cubic-bezier(1, 0, 0, 1);
+    transition: all .6s ease;
 }
 
 .memes_navigation {
@@ -59,7 +59,7 @@ p {
     height: 1rem;
     border: 0.1rem solid rgb(0, 0, 0);
     cursor: pointer;
-    background-color: white;
+    background-color: rgb(47, 38, 139);
     transition: all .2s ease;
     border-radius: 0.9rem;
 }
@@ -70,15 +70,32 @@ p {
 
 }
 
-#radio1:checked ~ .s1{
+#radio1:checked ~ .carousel > .carousel_item > .s1{
     margin-left: 0;
 } 
-#radio2:checked ~ .s1 {
+#radio2:checked ~ .carousel > .carousel_item > .s1 {
     margin-left: -25%;
 } 
-#radio3:checked ~ .s1 {
+#radio3:checked ~ .carousel > .carousel_item > .s1 {
     margin-left: -50%;
 } 
-#radio4:checked ~ .s1{
+#radio4:checked ~ .carousel > .carousel_item > .s1{
     margin-left: -75%;
+} 
+
+#radio1:checked ~ .memes_navigation > [for = radio1]{
+    border: 0.1rem solid rgb(177, 205, 92);
+    background-color: rgb(177, 205, 92);
+} 
+#radio2:checked ~ .memes_navigation > [for = radio2] {
+    border: 0.1rem solid rgb(177, 205, 92);
+    background-color: rgb(177, 205, 92);
+} 
+#radio3:checked ~ .memes_navigation > [for = radio3]{
+    border: 0.1rem solid rgb(177, 205, 92);
+    background-color: rgb(177, 205, 92);
+} 
+#radio4:checked ~ .memes_navigation > [for = radio4]{
+    border: 0.1rem solid rgb(177, 205, 92);
+    background-color: rgb(177, 205, 92);
 } 
