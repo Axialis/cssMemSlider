@@ -149,10 +149,12 @@ span {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 1rem;
+        order: 1;
     }
     .slide_text {
-        max-width: 100%;
+        min-width: 100%;
+        margin-top: 1rem;
+        order: 2;
     }
     .container {
         width: 70%;
