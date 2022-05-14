@@ -1,0 +1,47 @@
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+input {
+    display: none;
+    visibility: hidden;
+}
+
+.radio-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.1rem solid black;
+    cursor: pointer;
+    background-color: white;
+    transition: all .6s ease;
+    border-radius: 0.9rem;
+}
+
+.memes_navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;    
+}
